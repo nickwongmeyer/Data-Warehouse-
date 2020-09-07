@@ -1,6 +1,6 @@
-# Data-Warehouse-
+# Data-Warehouse
 Building Datawarhouse via AWS Reshift 
-Introduction
+#Introduction
 Sparkify is a music streaming startup, holding the JSON logs to monitor use activity and JSON metadata for songs in the application. 
 This project is aiming to deliver a Data Warehouse under the infrastructure of AWS S3 with Redshift, by building an ETL pipeline to extract all the data from Udacity S3 bucket to load the it to Redshift, transform them into a set of dimension database tables with Python and SQL, which could be  analysed with data visualisation and SQL query.
 In fact, ‘Sparkify’ would like to build an insight to find out the relationship between their songs and the song they have been listening to. 
