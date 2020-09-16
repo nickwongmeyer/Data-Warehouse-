@@ -43,5 +43,5 @@ Project Structure
 -	dhw.cfg: A Configuration file which connect the Redshift and IAM. 
 -	requirements.txt: file needed to process the deploy the application onto cloud
 
-Data are copied from the directories as a JSON formatted into all the stage tables, which were provided by Udacity as (LOG_DATA=s3://udacity-dend/log_data, LOG_JSONPATH=s3://udacity-dend/log_json_path.json,SONG_DATA=s3://udacity-dend/song_data), copying the data to the staging songs and staging_events tables. 
+Data are copied from the directories as a JSON formatted into all the stage tables, which were provided by Udacity as ```(LOG_DATA=s3://udacity-dend/log_data, LOG_JSONPATH=s3://udacity-dend/log_json_path.json,SONG_DATA=s3://udacity-dend/song_data)```, copying the data to the staging songs and staging_events tables. 
 The information were split into different tables into fact and dimension tables which is more flexible for the analytics point of view when the analyst are going to build the queries. In addition to this, a filter is built under the insert statement by the entries for which page is equal to 'NextSong', particularly, an extract function could be used for the datetime object under the time table from the songplays, And the 'timestamp' function is used to convert the epoch timestamp to a datetime object.
